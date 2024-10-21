@@ -1,0 +1,33 @@
+/* Contact Us Component Styling */
+.container {
+    padding: 20px;
+  }
+  
+  .form-label {
+    font-weight: bold;
+  }
+  
+  .btn-success {
+    background-color: #28a745;
+    border-color: #28a745;
+  }
+  
+  .btn-success:hover {
+    background-color: #218838;
+    border-color: #1e7e34;
+  }
+  
+  .bi {
+    color: #495057;
+  }
+  
+  .bi:hover {
+    color: #28a745;
+    cursor: pointer;
+  }
+  
+  iframe {
+    border-radius: 5px;
+    margin-top: 15px;
+  }
+  

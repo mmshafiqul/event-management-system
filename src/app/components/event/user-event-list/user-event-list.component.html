@@ -1,0 +1,45 @@
+<div class="container my-5">
+    <h1 class="text-center mb-5 border border-success">Your all events are here..</h1>
+
+    <div class=" row row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-3 g-3">
+        @for (event of events; track event.id){
+        <div class="col">
+            <div class="card h-100 border border-success shadow">
+                <div class="card-body">
+                    <div class="d-flex justify-content-between">
+                        <P class="text-start" style="font-size: small;">Event ID: {{event.id}}</P>
+                        <P class="text-end" style="font-size: small;">Your ID: {{event.userId}}</P>
+                    </div>
+                    <h5 class="card-title text-center" style="height: 20px;">{{event.title}}</h5>
+                    <p class="card-text text-start card-body" style="height: 150px;">Details: {{event.description}}</p>
+                    <div class="card-footer">
+                        <div class="d-flex flex-cols-2 justify-content-between" style="font-size: small;">
+                            <p class="card-text">Event date: {{ event.start | date: 'mediumDate' }}</p>
+                            <p></p>
+                        </div>
+
+                        <div class="d-flex flex-cols-2 justify-content-between" style="font-size: small;">
+                            <p class="card-text ">End date: {{event.end | date: 'mediumDate'}}</p>
+                            <p class="card-text">Seat: {{event.seat}}</p>
+                        </div>
+
+                        <div class="d-flex flex-cols-2 justify-content-between" style="font-size: small;">
+                            <p class="card-text">posted date: {{event.postedDate | date: 'mediumDate'}}</p>
+                            <p class="card-text">Price: {{event.price}}</p>
+
+                        </div>
+
+                        <div class="d-flex flex-cols-2 justify-content-between">
+                            <button class="btn btn-success" [routerLink]="'/edit-event/' + event.id">Edit</button>
+                            <button class="btn btn-warning" (click)="confirmDelete(event.id!)">Delete</button>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+        }
+    </div>
+
+</div>

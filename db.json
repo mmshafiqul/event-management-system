@@ -1,0 +1,161 @@
+{
+  "users": [
+    {
+      "id": "2001",
+      "uName": "name",
+      "uEmail": "u@email.com",
+      "uPassword": "abcdvefg",
+      "orgId": "3001"
+    },
+    {
+      "id": "c08d",
+      "uName": "suzon",
+      "uEmail": "suzon@email.com",
+      "uPassword": "abcdef"
+    },
+    {
+      "id": "332c",
+      "uName": "Ratul",
+      "uEmail": "ratul@email.com",
+      "uPassword": "124536"
+    }
+  ],
+  "orgs": [
+    {
+      "id": "3001",
+      "oName": "orgname",
+      "oAddress": "ahasjfhaf",
+      "oEmail": "org@email.com"
+    }
+  ],
+  "events": [
+    {
+      "id": "1001",
+      "userId": "2001",
+      "title": "first title",
+      "description": "Event Desccription",
+      "start": "satrt date",
+      "end": "end date",
+      "price": 123,
+      "seat": 50,
+      "postedDate": "posted date"
+    },
+    {
+      "id": "1002",
+      "userId": "2007",
+      "title": "eventTitle",
+      "description": "Event Desccription",
+      "start": "satrt date",
+      "end": "end date",
+      "price": 123,
+      "seat": 50,
+      "postedDate": "posted date"
+    },
+    {
+      "id": "1003",
+      "userId": "2001",
+      "title": "first title",
+      "description": "Event Desccription",
+      "start": "satrt date",
+      "end": "end date",
+      "price": 123,
+      "seat": 50,
+      "postedDate": "posted date"
+    },
+    {
+      "id": "1004",
+      "userId": "2007",
+      "title": "eventTitle",
+      "description": "Event Desccription",
+      "start": "satrt date",
+      "end": "end date",
+      "price": 123,
+      "seat": 50,
+      "postedDate": "posted date"
+    },
+    {
+      "id": "1005",
+      "userId": "2001",
+      "title": "first title",
+      "description": "Event Desccription",
+      "start": "satrt date",
+      "end": "end date",
+      "price": 123,
+      "seat": 50,
+      "postedDate": "posted date"
+    },
+    {
+      "id": "a8d5",
+      "userId": "",
+      "title": "",
+      "description": "",
+      "start": "",
+      "end": "",
+      "price": 0,
+      "seat": 0,
+      "postedDate": ""
+    },
+    {
+      "id": "a9e1",
+      "userId": "",
+      "title": "asfs",
+      "description": "",
+      "start": "",
+      "end": "",
+      "price": 0,
+      "seat": 0,
+      "postedDate": ""
+    },
+    {
+      "id": "a3a1",
+      "userId": "332c",
+      "title": "Tech Conference 2024",
+      "description": "     A conference focusing on the latest in technology and innovation.\n",
+      "start": "2024-10-26",
+      "end": "2024-10-26",
+      "price": 10,
+      "seat": 35,
+      "postedDate": "2024-10-21"
+    },
+    {
+      "id": "0e62",
+      "userId": "332c",
+      "title": "Art Expo 2024",
+      "description": "Showcasing contemporary artists and their works. Showcasing contemporary artists and their works. Showcasing contemporary artists and their works.",
+      "start": "2024-10-21",
+      "end": "2024-10-21",
+      "price": 0,
+      "seat": 0,
+      "postedDate": "2024-10-21"
+    },
+    {
+      "id": "3c72",
+      "userId": "332c",
+      "title": "Web Development Bootcamp",
+      "description": "A hands-on bootcamp to kickstart your web development career.\n",
+      "start": "2024-10-23",
+      "end": "2024-10-23",
+      "price": 14,
+      "seat": 12,
+      "postedDate": "2024-10-21"
+    },
+    {
+      "id": "67ef",
+      "userId": "332c",
+      "title": "Local Farmers Market",
+      "description": "Experience fresh produce and local goods. Experience fresh produce and local goods. Experience fresh produce and local goods.",
+      "start": "2024-10-29",
+      "end": "2024-10-29",
+      "price": 0,
+      "seat": 50,
+      "postedDate": "2024-10-21T16:04:08.460Z"
+    }
+  ],
+  "tickets": [
+    {
+      "id": "10001",
+      "eventId": "1001",
+      "userId": "2001"
+    }
+  ]
+}

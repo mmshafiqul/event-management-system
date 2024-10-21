@@ -1,0 +1,127 @@
+<!-- carousel Section -->
+<div id="eventCarousel" class="carousel slide container " data-bs-ride="carousel">
+    <!-- Indicators/Dots -->
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#eventCarousel" data-bs-slide-to="0" class="active bg-success" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#eventCarousel" data-bs-slide-to="1" class=" bg-success" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#eventCarousel" data-bs-slide-to="2" class=" bg-success" aria-label="Slide 3"></button>
+    </div>
+  
+    <!-- Carousel Items -->
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img style="height: 90vh;" src="https://thumbs.dreamstime.com/b/multiethnic-diverse-group-business-coworkers-team-meeting-discussion-top-view-modern-office-copy-space-partnership-139754388.jpg?w=768" class="d-block w-100" alt="Event Management Slide 1">
+        <div class="carousel-caption d-none d-md-block text-dark">
+          <h3 class="fs-1">Plan Your Perfect Event</h3>
+          <p>Organize unforgettable events with our easy-to-use platform.</p>
+        </div>
+      </div>
+      <div class="carousel-item ">
+        <img style="height: 90vh;" src="https://thumbs.dreamstime.com/b/add-event-14125923.jpg?w=768" class="d-block w-100 " alt="Event Management Slide 2">
+        <div class="carousel-caption d-none d-md-block text-dark">
+          <h3 class="fs-1" >Seamless Event Booking</h3>
+          <p>Book your favorite events with a few simple clicks.</p>
+        </div>
+      </div>
+      <div class="carousel-item ">
+        <img style="height: 90vh;" src="https://thumbs.dreamstime.com/b/event-management-concept-event-management-flowchart-event-management-related-items-mixed-media-business-event-management-concept-138605343.jpg?w=992" class="d-block w-100" alt="Event Management Slide 3">
+        <div class="carousel-caption d-none d-md-block text-dark">
+          <h3 class="fs-1">Customize Your Experience</h3>
+          <p>Create events that suit your style and preferences.</p>
+        </div>
+      </div>
+    </div>
+  
+    <!-- Carousel Controls -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#eventCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon bg-success" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next " type="button" data-bs-target="#eventCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon bg-success" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  
+<!-- Welcome Section -->
+<div class="container my-5 text-center border border-success pb-2">
+  <h2 class="text-center text-decoration-underline link-underline-success py-2">Welcome to Your Event</h2>
+  <p class="lead">Your one-stop solution for planning, booking, and managing all types of events effortlessly.</p>
+  <a href="/events" class="btn btn-success btn-lg">Explore Events</a>
+</div>
+
+
+<!-- Key Features Section -->
+<div class="container my-5 border border border-success pb-2 " >
+  <div class="row text-center">
+    <h3 class="text-center text-decoration-underline link-underline-success py-2" >Upcoming Events</h3>
+    <div class="col-md-4">
+      <i class="bi bi-calendar-check fs-1 text-success" ></i>
+      <h4>Easy Event Creation</h4>
+      <p>Create and manage events effortlessly with our intuitive tools.</p>
+    </div>
+    <div class="col-md-4">
+      <i class="bi bi-person-check fs-1 text-success"></i>
+      <h4>Secure Booking</h4>
+      <p>Book events securely and track your reservations in one place.</p>
+    </div>
+    <div class="col-md-4">
+      <i class="bi bi-people fs-1 text-success"></i>
+      <h4>Connect with Organizers</h4>
+      <p>Connect and collaborate with event organizers and other attendees.</p>
+    </div>
+  </div>
+</div>
+
+
+<!-- Upcoming Events Section -->
+<div class="container my-5 border border-success pb-2">
+  <h3 class="text-center text-decoration-underline link-underline-success py-2" >Upcoming Events</h3>
+  <div class="row">
+    <div class="col-md-4 mb-4 shadow" *ngFor="let event of upcomingEvents">
+      <div class="card h-100 shadow-sm">
+        <!-- <img src="assets/event-placeholder.jpg" class="card-img-top" alt="Event Image"> -->
+        <div class="card-body">
+          <h5 class="card-title">{{ event.title }}</h5>
+          <p class="card-text">{{ truncateText(event.description, 100) }}</p>
+          <a routerLink="/events" class="btn btn-outline-success">Learn More</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Testimonials Section -->
+<div class="container my-5 border border-success pb-2">
+  <h3 class="text-center text-decoration-underline link-underline-success py-2">What Our Users Say</h3>
+  <div class="row text-center">
+    <div class="col-md-4 shadow">
+      <blockquote class="blockquote ">
+        <p>"This platform made event planning so much easier for our team!"</p>
+        <footer class="blockquote-footer">John Doe, Event Organizer</footer>
+      </blockquote>
+    </div>
+    <div class="col-md-4 shadow">
+      <blockquote class="blockquote">
+        <p>"I booked my first event in minutes! Seamless experience."</p>
+        <footer class="blockquote-footer">Jane Smith, Attendee</footer>
+      </blockquote>
+    </div>
+    <div class="col-md-4 shadow">
+      <blockquote class="blockquote">
+        <p>"A great tool for managing both small and large events."</p>
+        <footer class="blockquote-footer">Alex Johnson, Corporate User</footer>
+      </blockquote>
+    </div>
+  </div>
+</div>
+
+
+<!-- Call-to-Action Banner -->
+<div class="container-fluid bg-success text-white py-4 text-center">
+  <h4 class="border border-success">Ready to Create or Book Your Next Event?</h4>
+  <p class="lead">Join our community today and get started with organizing or booking the best events.</p>
+  <a href="/register" class="btn btn-light btn-lg">Sign Up Now</a>
+</div>
+
+

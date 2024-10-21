@@ -1,0 +1,42 @@
+<!-- <p>create-event works!</p> -->
+<div class="container my-5">
+    <h3 class="text-center">Create an Event</h3>
+    <form>
+      <div class="mb-3">
+        <label for="title" class="form-label">Event Title</label>
+        <input type="text" class="form-control" id="title" name = "title" placeholder="Enter event title" required [(ngModel)]="title" />
+      </div>
+  
+      <div class="mb-3">
+        <label for="description" class="form-label">Event Description</label>
+        <textarea class="form-control" id="description" rows="5" name="description" placeholder="Enter event description" required [(ngModel)]="description"></textarea>
+      </div>
+  
+      <div class="row">
+        <div class="col-md-6 mb-3">
+          <label for="start" class="form-label" >Event Date</label>
+          <input type="date" class="form-control" id="start" name="start" required [(ngModel)]="start" />
+        </div>
+  
+        <div class="col-md-6 mb-3">
+          <label for="end" class="form-label">End Date</label>
+          <input type="date" class="form-control" id="end" name="end" required [(ngModel)]="end"/>
+        </div>
+      </div>
+  
+      <div class="row">
+        <div class="col-md-6 mb-3">
+          <label for="price" class="form-label">Price (in USD)</label>
+          <input type="number" class="form-control" id="price" placeholder="Enter price" min="0" name="price" required [(ngModel)]="price"/>
+        </div>
+  
+        <div class="col-md-6 mb-3">
+          <label for="seat" class="form-label">Available Seats</label>
+          <input type="number" class="form-control" id="seat" placeholder="Enter seat count" min="1" name="seat" required [(ngModel)]="seat"/>
+        </div>
+      </div>
+  
+      <button type="submit" class="btn btn-success" (click)="createEvent()">Create Event</button>
+    </form>
+  </div>
+  

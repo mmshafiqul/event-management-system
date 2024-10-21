@@ -1,0 +1,47 @@
+<!-- <p>edit-event works!</p> -->
+
+<div class="container my-5 w-75">
+    <h2 *ngIf="isEditMode" class="text-center">Edit Event</h2>
+    <h2 *ngIf="!isEditMode">Create Event</h2>
+    <form (ngSubmit)="onSubmit()" >
+        <div class="form-group mb-3">
+            <label for="title" class="form-label">Title</label>
+            <input type="text" id="title" [(ngModel)]="event.title" name="title" class="form-control" required>
+        </div>
+        <div class="form-group mb-3">
+            <label for="description" class="form-label">Description</label>
+            <textarea id="description" [(ngModel)]="event.description" rows="5" name="description" class="form-control"
+                required></textarea>
+        </div>
+        <div class=" row form-group">
+            <div class="col-md-6 mb-3">
+                <label for="start" class="form-label">Event Date</label>
+                <input type="date" class="form-control" id="start" [(ngModel)]="event.start" name="start" required />
+            </div>
+
+            <div class="col-md-6 mb-3">
+                <label for="end" class="form-label">End Date</label>
+                <input type="date" class="form-control" id="end" [(ngModel)]="event.end" name="end" required />
+            </div>
+        </div>
+
+        <div class="row form-group">
+            <div class="col-md-6 mb-3">
+                <label for="price" class="form-label">Price (in USD)</label>
+                <input type="number" class="form-control" id="price" [(ngModel)]="event.price" placeholder="Enter price"
+                    min="0" name="price" required />
+            </div>
+
+            <div class="col-md-6 mb-3">
+                <label for="seat" class="form-label">Available Seats</label>
+                <input type="number" class="form-control" id="seat" required [(ngModel)]="event.seat"
+                    placeholder="Enter seat count" min="1" name="seat" />
+            </div>
+        </div>
+        <!-- Add other input fields for start, end date, seat, price, etc. as needed -->
+        <div class="d-flex justify-content-between">
+            <button class="btn btn-warning" routerLink="/user-events">Cancel</button>
+            <button type="submit" class="btn btn-success">{{ isEditMode ? 'Update' : 'Create' }}</button>
+        </div>
+    </form>
+</div>

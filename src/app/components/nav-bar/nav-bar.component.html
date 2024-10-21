@@ -1,0 +1,59 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-success">
+  <div class="container">
+    <!-- Brand -->
+
+    <a class="navbar-brand" href="#"> <img class="me-2" style="height: 35px; width: 35px;" src="faveicon.png"
+        alt="">Your Event</a>
+
+    <!-- Toggler Button for Mobile View -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Navbar Links -->
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto ">
+        <li class="nav-item">
+          <a class="nav-link text-white" routerLink="/">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white" routerLink="events">Events</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white" routerLink="/about">About Us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white" routerLink="/contact">Contact Us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white" routerLink="#">Blog</a>
+        </li>
+        @if(isloggedIn()){
+          <li class="nav-item dropdown ms-5">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              id="navbarDropdownMenuLink"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              <img src="user1.png" style="height: 32px; width: 32px; border-radius: 100%;" alt="">
+            </a>
+            <ul class="dropdown-menu dropdown-menu-end text-end" aria-labelledby="navbarDropdownMenuLink">
+              <li><a class="dropdown-item text-decoration-underline link-underline-success" routerLink="/user-events">All Events</a></li>
+              <li><a class="dropdown-item text-decoration-underline link-underline-success" routerLink="/create-event">Create Event</a></li>
+              <li><a class="dropdown-item text-decoration-underline link-underline-success" (click)="signOut()">Sign Out</a></li>
+            </ul>
+          </li>
+          
+        } @else {
+        <li class="nav-item">
+          <a class="nav-link text-white" routerLink="/register">Sign In</a>
+        </li>
+        }
+      </ul>
+    </div>
+  </div>
+</nav>

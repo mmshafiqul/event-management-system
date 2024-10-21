@@ -1,0 +1,34 @@
+<!-- <p>event-detail works!</p>
+<h1>
+    {{event.title}}
+</h1> -->
+
+@if (event){
+
+<div class="container card text-center my-5">
+
+    <div class="card-header d-flex justify-content-between">
+        <P class="text-start" style="font-size: small;">Event ID: {{event.id}}</P>
+        <h5 class="card-title">{{event.title}}</h5>
+        <P class="text-end" style="font-size: small;">Organizer ID: {{event.userId}}</P>
+
+    </div>
+    <div class="card-body">
+        <!-- <h5 class="card-title">{{event.title}}</h5> -->
+        <p class="card-text" style="height: 260px;">{{event.description}}</p>
+        <div class="row row-cols-2 row-cols-sm-2 row-cols-md-3 row-cols-lg-5 text-start fs-sm">
+            <p>Event Date : {{event.start | date:'mediumDate'}}</p>
+            <p>End Date : {{event.end | date:'mediumDate'}}</p>
+            <p>Ticket Price : ${{event.price}}</p>
+            <p>Total Seats : {{event.seat}}</p>
+            <p>Available Seats : {{event.seat}}</p>
+        </div>
+
+    </div>
+    <div class="card-footer d-flex justify-content-between ">
+        <a href="/events" class="btn btn-warning">Go back</a>
+        <p class="">Posted Date : {{event.postedDate | date:'mediumDate'}}</p>
+        <a href="/" class="btn btn-success">Book</a>
+    </div>
+</div>
+}
