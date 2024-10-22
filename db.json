@@ -42,28 +42,6 @@
   ],
   "events": [
     {
-      "id": "1004",
-      "userId": "2007",
-      "title": "eventTitle",
-      "description": "Event Desccription",
-      "start": "satrt date",
-      "end": "end date",
-      "price": 123,
-      "seat": 50,
-      "postedDate": "posted date"
-    },
-    {
-      "id": "1005",
-      "userId": "2001",
-      "title": "first title",
-      "description": "Event Desccription",
-      "start": "satrt date",
-      "end": "end date",
-      "price": 123,
-      "seat": 50,
-      "postedDate": "posted date"
-    },
-    {
       "id": "a3a1",
       "userId": "332c",
       "title": "Tech Conference 2024",
@@ -205,6 +183,50 @@
       "price": 25,
       "seat": 50,
       "postedDate": "2024-10-22T06:02:20.465Z"
+    },
+    {
+      "id": "c9f1",
+      "userId": "c08d",
+      "title": "Career Development Summit 2024",
+      "description": "Accelerate your career at the Career Development Summit. Featuring expert speakers, career coaching sessions, and networking opportunities, this event is designed for professionals seeking to enhance their skills, navigate career transitions, or explore new job markets. Perfect for those committed to lifelong learning and career growth.",
+      "start": "2024-11-10",
+      "end": "2024-11-10",
+      "price": 22,
+      "seat": 60,
+      "postedDate": "2024-10-22T06:22:14.719Z"
+    },
+    {
+      "id": "ef34",
+      "userId": "c08d",
+      "title": "Women in Leadership Conference",
+      "description": "Empower and inspire at the Women in Leadership Conference. Connect with trailblazing female leaders, entrepreneurs, and change-makers through keynote speeches, panels, and workshops. This event fosters an inclusive environment, promoting gender equality and providing actionable insights for women aiming to rise and lead in their respective industries.",
+      "start": "2024-11-01",
+      "end": "2024-11-01",
+      "price": 0,
+      "seat": 100,
+      "postedDate": "2024-10-22T06:23:49.535Z"
+    },
+    {
+      "id": "1c93",
+      "userId": "c08d",
+      "title": "Virtual Reality and Gaming Expo",
+      "description": "Explore the immersive world of virtual reality and gaming at this cutting-edge expo. Featuring the latest in VR technology, game demos, and panel discussions with industry experts, this event is perfect for gamers, developers, and enthusiasts eager to experience the future of entertainment and interactive technology.",
+      "start": "2024-11-05",
+      "end": "2024-11-05",
+      "price": 25,
+      "seat": 100,
+      "postedDate": "2024-10-22T06:25:41.247Z"
+    },
+    {
+      "id": "f0f1",
+      "userId": "c08d",
+      "title": "Global Climate Action Summit",
+      "description": "Join environmental leaders, activists, and scientists at the Global Climate Action Summit. Addressing pressing environmental challenges, this event offers workshops, discussions, and networking opportunities focused on sustainability, renewable energy, and conservation efforts. Perfect for eco-conscious individuals committed to making a positive impact on the planet.",
+      "start": "2024-10-30",
+      "end": "2024-10-30",
+      "price": 0,
+      "seat": 120,
+      "postedDate": "2024-10-22T06:26:17.566Z"
     }
   ],
   "tickets": [

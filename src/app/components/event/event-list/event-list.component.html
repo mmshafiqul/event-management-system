@@ -42,7 +42,7 @@
                 <div class="card-body">
                     <h5 class="card-title text-center fs-6 " style="height: 30px;">{{ event.title }}</h5>
                     <p class="card-text" style="height: 100px;">{{ truncateText(event.description, 120) }}</p>
-                    <p class=" text-end text-success" style="font-size: small;">Event date: {{event.start | date: 'mediumDate'}}</p>
+                    <p class=" text-end text-success" style="font-size: small;">Event date: {{event.start  }}</p>
                     <a [routerLink]="['/events/event-details', event.id]"
                         class="btn btn-success d-flex justify-content-center">Details</a>
 
