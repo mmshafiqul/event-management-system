@@ -66,10 +66,10 @@ export class RegisterComponent implements OnInit {
           localStorage.setItem('user', res[0].id!);
           this.router.navigate(['/user-events'])
         } else {
-          // wrong password
+          alert("Invaild credential!")
         }
       } else {
-        // no user
+        alert("Invaild credential!")
       }
     })
   }
