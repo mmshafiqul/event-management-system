@@ -64,7 +64,7 @@ export class RegisterComponent implements OnInit {
         if (this.loginPassword === res[0].uPassword) {
           this.userService.loggedinUser = res[0];
           localStorage.setItem('user', res[0].id!);
-          this.router.navigate(['/'])
+          this.router.navigate(['/user-events'])
         } else {
           // wrong password
         }
