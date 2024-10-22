@@ -35,12 +35,14 @@
     <h1 class="text-center mb-5 border border-success">Find your event and book right now...</h1>
 
     <!-- Event Cards -->
-    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-2 row-cols-lg-4 g-3">
+    <div class="row row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-3 g-3">
         <div class="col" *ngFor="let event of paginatedEvents">
             <div class="card h-100 border border-success shadow">
+                
                 <div class="card-body">
-                    <h5 class="card-title text-center " style="height: 20px;">{{ event.title }}</h5>
-                    <p class="card-text" style="height: 100px;">{{ event.description }}</p>
+                    <h5 class="card-title text-center fs-6 " style="height: 30px;">{{ event.title }}</h5>
+                    <p class="card-text" style="height: 100px;">{{ truncateText(event.description, 120) }}</p>
+                    <p class=" text-end text-success" style="font-size: small;">Event date: {{event.start | date: 'mediumDate'}}</p>
                     <a [routerLink]="['/events/event-details', event.id]"
                         class="btn btn-success d-flex justify-content-center">Details</a>
 

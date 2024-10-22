@@ -21,6 +21,9 @@ export class RegisterComponent implements OnInit {
   email = "";
   password = "";
 
+  successMessage = '';
+  errorMessage = '';
+
   constructor(private userService: UserService, private router: Router) { }
 
   ngOnInit(): void {
@@ -53,6 +56,7 @@ export class RegisterComponent implements OnInit {
 
     }
     this.userService.userRegistration(user).subscribe(() => {
+      alert("Your registration is successful...!")
       this.toggle();
     })
   }
@@ -80,3 +84,5 @@ export class RegisterComponent implements OnInit {
 // Usage example
 // const registerComponent = new RegisterComponent();
 // registerComponent.toggle();
+
+

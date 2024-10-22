@@ -11,7 +11,7 @@
                         <P class="text-end" style="font-size: small;">Your ID: {{event.userId}}</P>
                     </div>
                     <h5 class="card-title text-center" style="height: 20px;">{{event.title}}</h5>
-                    <p class="card-text text-start card-body" style="height: 150px;">Details: {{event.description}}</p>
+                    <p class="card-text text-start card-body" style="height: 150px;">Details: {{truncateText(event.description, 150) }}</p>
                     <div class="card-footer">
                         <div class="d-flex flex-cols-2 justify-content-between" style="font-size: small;">
                             <p class="card-text">Event date: {{ event.start | date: 'mediumDate' }}</p>
@@ -24,8 +24,8 @@
                         </div>
 
                         <div class="d-flex flex-cols-2 justify-content-between" style="font-size: small;">
-                            <p class="card-text">posted date: {{event.postedDate | date: 'mediumDate'}}</p>
-                            <p class="card-text">Price: {{event.price}}</p>
+                            <p class="card-text">Posted date: {{event.postedDate | date: 'mediumDate'}}</p>
+                            <p class="card-text">Price: ${{event.price}}</p>
 
                         </div>
 

@@ -18,6 +18,18 @@
       "uName": "Ratul",
       "uEmail": "ratul@email.com",
       "uPassword": "124536"
+    },
+    {
+      "id": "4ade",
+      "uName": "rajib",
+      "uEmail": "rajib@email.com",
+      "uPassword": "123456"
+    },
+    {
+      "id": "4ccf",
+      "uName": "rahul",
+      "uEmail": "rahul@email.com",
+      "uPassword": "123456"
     }
   ],
   "orgs": [
@@ -29,39 +41,6 @@
     }
   ],
   "events": [
-    {
-      "id": "1001",
-      "userId": "2001",
-      "title": "first title",
-      "description": "Event Desccription",
-      "start": "satrt date",
-      "end": "end date",
-      "price": 123,
-      "seat": 50,
-      "postedDate": "posted date"
-    },
-    {
-      "id": "1002",
-      "userId": "2007",
-      "title": "eventTitle",
-      "description": "Event Desccription",
-      "start": "satrt date",
-      "end": "end date",
-      "price": 123,
-      "seat": 50,
-      "postedDate": "posted date"
-    },
-    {
-      "id": "1003",
-      "userId": "2001",
-      "title": "first title",
-      "description": "Event Desccription",
-      "start": "satrt date",
-      "end": "end date",
-      "price": 123,
-      "seat": 50,
-      "postedDate": "posted date"
-    },
     {
       "id": "1004",
       "userId": "2007",
@@ -83,28 +62,6 @@
       "price": 123,
       "seat": 50,
       "postedDate": "posted date"
-    },
-    {
-      "id": "a8d5",
-      "userId": "",
-      "title": "",
-      "description": "",
-      "start": "",
-      "end": "",
-      "price": 0,
-      "seat": 0,
-      "postedDate": ""
-    },
-    {
-      "id": "a9e1",
-      "userId": "",
-      "title": "asfs",
-      "description": "",
-      "start": "",
-      "end": "",
-      "price": 0,
-      "seat": 0,
-      "postedDate": ""
     },
     {
       "id": "a3a1",
@@ -149,12 +106,111 @@
       "price": 0,
       "seat": 50,
       "postedDate": "2024-10-21T16:04:08.460Z"
+    },
+    {
+      "id": "cb92",
+      "userId": "4ade",
+      "title": "First Event ",
+      "description": "So just what is an event description? In a nutshell, it's a piece of copy that tells people the basic information they need to know to decide whether or not they want to attend the event.",
+      "start": "2024-10-28",
+      "end": "2024-10-29",
+      "price": 10,
+      "seat": 35,
+      "postedDate": "2024-10-22T05:32:33.380Z"
+    },
+    {
+      "id": "24ba",
+      "userId": "4ade",
+      "title": "Tech Innovators Conference 2024",
+      "description": "Join leading tech experts and innovators at this year’s conference. Discover cutting-edge technology, AI advancements, and emerging trends shaping the future. Engage with industry leaders through insightful talks, panel discussions, and networking opportunities. Perfect for tech enthusiasts, developers, and entrepreneurs eager to explore tomorrow’s innovations today.",
+      "start": "2024-11-01",
+      "end": "2024-11-01",
+      "price": 12,
+      "seat": 45,
+      "postedDate": "2024-10-22T05:44:15.930Z"
+    },
+    {
+      "id": "817a",
+      "userId": "4ade",
+      "title": " Annual Health and Wellness Expo",
+      "description": "Explore the latest in health and wellness at the Annual Expo. From fitness trends to mental health awareness, this event offers workshops, product demos, and expert sessions on holistic well-being. Perfect for health-conscious individuals looking to improve their lifestyle, balance, and well-being in today’s fast-paced world.",
+      "start": "2024-11-03",
+      "end": "2024-11-03",
+      "price": 14,
+      "seat": 40,
+      "postedDate": "2024-10-22T05:46:35.434Z"
+    },
+    {
+      "id": "c430",
+      "userId": "4ade",
+      "title": "Global Entrepreneurship Summit",
+      "description": "Meet global entrepreneurs, investors, and business leaders at this summit. Learn how to scale your startup, pitch to investors, and navigate today’s dynamic market. With keynote speakers, mentorship opportunities, and networking sessions, this summit is the ideal platform for budding entrepreneurs seeking to expand their businesses globally.",
+      "start": "2024-10-28",
+      "end": "2024-10-28",
+      "price": 20,
+      "seat": 60,
+      "postedDate": "2024-10-22T05:47:35.826Z"
+    },
+    {
+      "id": "c875",
+      "userId": "4ccf",
+      "title": "Digital Marketing Mastery Workshop",
+      "description": "Unlock the secrets of successful digital marketing with this intensive workshop. From SEO to social media strategies, learn the tools and techniques to grow your online presence. Ideal for marketers, entrepreneurs, and content creators looking to enhance their digital marketing skills in a fast-evolving digital landscape.",
+      "start": "2024-10-31",
+      "end": "2024-10-31",
+      "price": 22,
+      "seat": 45,
+      "postedDate": "2024-10-22T05:49:43.907Z"
+    },
+    {
+      "id": "7fb9",
+      "userId": "4ccf",
+      "title": "Sustainable Living Fair",
+      "description": "Discover eco-friendly products and sustainable living solutions at the Sustainable Living Fair. With a focus on environmental conservation, attendees will explore green technologies, renewable energy, and sustainable lifestyle choices. Engage with eco-conscious brands and learn how to reduce your carbon footprint through various workshops and demonstrations.",
+      "start": "2024-10-24",
+      "end": "2024-10-24",
+      "price": 15,
+      "seat": 40,
+      "postedDate": "2024-10-22T05:58:38.129Z"
+    },
+    {
+      "id": "6ad5",
+      "userId": "4ccf",
+      "title": "Photography and Videography Expo",
+      "description": "Immerse yourself in the world of photography and videography at this exciting expo. From equipment demos to creative workshops, learn from industry professionals about the latest trends, techniques, and gear. Perfect for both aspiring and professional photographers eager to expand their knowledge and refine their craft.",
+      "start": "2024-11-04",
+      "end": "2024-11-04",
+      "price": 20,
+      "seat": 50,
+      "postedDate": "2024-10-22T05:59:27.442Z"
+    },
+    {
+      "id": "bcd4",
+      "userId": "4ccf",
+      "title": "Culinary Food Fest 2024",
+      "description": "Savor the flavors of the world at the Culinary Food Fest. Featuring celebrity chefs, live cooking demos, and gourmet food vendors, this event is a haven for food enthusiasts. Explore diverse cuisines, attend workshops, and indulge in a delicious experience that celebrates food, culture, and creativity.",
+      "start": "2024-11-08",
+      "end": "2024-11-08",
+      "price": 18,
+      "seat": 45,
+      "postedDate": "2024-10-22T06:01:07.865Z"
+    },
+    {
+      "id": "d36c",
+      "userId": "4ccf",
+      "title": "Adventure Travel Expo",
+      "description": "Embark on a journey of adventure and exploration at the Adventure Travel Expo. Discover thrilling destinations, outdoor gear, and travel tips from seasoned adventurers. Whether you’re planning a backpacking trip, safari, or extreme sports experience, this expo offers everything you need for your next big adventure.",
+      "start": "2024-11-09",
+      "end": "2024-11-09",
+      "price": 25,
+      "seat": 50,
+      "postedDate": "2024-10-22T06:02:20.465Z"
     }
   ],
   "tickets": [
     {
       "id": "10001",
-      "eventId": "1001",
+      "eventId": null,
       "userId": "2001"
     }
   ]

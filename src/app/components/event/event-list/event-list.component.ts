@@ -28,7 +28,7 @@ export class EventListComponent implements OnInit {
   events: Event[] = [];
   paginatedEvents: Event[] = [];
   currentPage: number = 1;
-  itemsPerPage: number = 16;
+  itemsPerPage: number = 12;
   totalPages: number = 0;
 
   constructor(private eventService: EventService) { }
@@ -39,6 +39,10 @@ export class EventListComponent implements OnInit {
       this.totalPages = Math.ceil(this.events.length / this.itemsPerPage);
       this.updatePaginatedEvents();
     });
+  }
+
+  truncateText(text: string, length: number): string {
+    return text.length > length ? text.substring(0, length) + '...' : text;
   }
 
   updatePaginatedEvents(): void {
